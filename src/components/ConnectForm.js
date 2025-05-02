@@ -24,12 +24,13 @@ const ConnectForm = ({ closePopup }) => {
       formData,
       'D-VE3ImMNzfXOXRL5'
     )
-      .then((result) => {
-        console.log(result.text);
-        setSubmitted(true);
-      }, (error) => {
-        console.log(error.text);
-      });
+    .then((result) => {
+      console.log(result.text);
+      setSubmitted(true);
+    })
+    .catch((error) => {
+      console.log(error.text);
+    });
   };
 
   // Handle ESC key to close popup

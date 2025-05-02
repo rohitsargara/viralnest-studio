@@ -69,7 +69,7 @@ function ContactForm({ selectedService, selectedPlan }) {
             <button type="submit" className="submit-button">Send Message</button>
 
             <p className="privacy-text">
-                By clicking this button, you agree to the site's <a href="#">privacy policy</a> and consent to the processing of your personal data.
+                By clicking this button, you agree to the site's <a href="/">privacy policy</a> and consent to the processing of your personal data.
             </p>
         </form>
     );
