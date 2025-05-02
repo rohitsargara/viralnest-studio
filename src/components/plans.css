@@ -1,0 +1,184 @@
+/* Section container */
+.services-section {
+  background-color: #0f0f0f;
+  padding: 4rem 2rem;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 0px;
+}
+
+/* Section title */
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #ffffff;
+  font-weight: bold;
+  margin-top: 0px;
+}
+
+/* Tabs for service selection */
+.service-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+.service-button {
+  background-color: transparent;
+  color: #ffffff;
+  border: 2px solid #ffffff55;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.service-button:hover,
+.service-button.active {
+  background-color: #ffffff;
+  color: #0f0f0f;
+  border-color: #ffffff;
+}
+
+/* Plan cards */
+.plans-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.plan-card {
+  background-color: #1e1e1e;
+  border-radius: 16px;
+  padding: 2rem;
+  width: 300px;
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.plan-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 30px rgba(255, 255, 255, 0.2);
+}
+
+.plan-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #ffffff;
+}
+
+.plan-price {
+  font-size: 1.25rem;
+  color: #00ff9d;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.plan-description {
+  font-size: 1rem;
+  color: #dddddd;
+  margin-bottom: 1rem;
+}
+
+.plan-features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem 0;
+}
+
+.plan-features li {
+  margin: 0.5rem 0;
+  font-size: 0.95rem;
+  color: #cccccc;
+}
+
+/* Plan button */
+.plan-button {
+  background-color: #00ff9d;
+  color: #000000;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.plan-button:hover {
+  background-color: #00e68a;
+}
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.popup-content {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  position: relative;
+  width: 90%;
+  max-width: 500px;
+  animation: fadeInZoom 0.4s ease forwards; /* <-- This is the new line */
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: #333;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .plans-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .plan-card {
+    width: 100%;
+    max-width: 80%;
+  }
+
+  .service-tabs {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .service-button {
+    width: 100%;
+    padding: 1rem;
+  }
+}
+
+@keyframes fadeInZoom {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+

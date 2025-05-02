@@ -1,0 +1,19 @@
+:root {
+  /* Base Palette */
+  --color-bg: #F1EFEC;            /* Light background */
+  --color-section: #D4C9BE;       /* Section background */
+  --color-primary: #123458;       /* Main brand color */
+  --color-text-dark: #030303;     /* For text on light bg */
+  --color-text-light: #F1EFEC;    /* For text on dark bg */
+
+  /* Optional Accent Color */
+  --color-accent: #FF6B6B;        /* Coral red for highlights */
+
+  /* Utility Colors */
+  --color-white: #ffffff;
+  --color-black: #000000;
+
+  /* Typography */
+  --font-heading: 'Caveat', cursive;
+  --font-body: 'Inter', sans-serif;
+}

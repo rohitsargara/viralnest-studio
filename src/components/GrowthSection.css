@@ -1,0 +1,133 @@
+.speed-optimization-container {
+    background-color: #f8f9fa;
+    padding: 40px;
+    border-radius: 15px;
+    width: 65%;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.h2-div {
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 50px;
+}
+
+.support-p {
+    font-size: 55px;
+    color: #333333;
+    font-weight: 500;
+    line-height: 2px;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    margin-bottom: 30px;
+    width: 95%;
+    margin: auto;
+}
+
+.design-p {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.main-image {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+/* Icons - Positioned on top of the main image */
+.icon {
+    position: absolute;
+    width: 80px;
+    z-index: 2;
+}
+
+.icon-left {
+    bottom: 10px;
+    left: -20px;
+}
+
+.icon-right {
+    top: -30px;
+    right: -30px;
+}
+
+/* Responsive Design */
+
+/* Tablets (768px - 1024px) */
+@media (max-width: 1024px) {
+    .main-container {
+        grid-template-columns: 1fr;
+        width: 90%;
+    }
+    .speed-optimization-container {
+        width: 80%;
+        margin-bottom: 30px;
+    }
+    .support-p {
+        font-size: 45px;
+    }
+    .main-image {
+        max-width: 400px;
+    }
+    .icon {
+        width: 60px;
+    }
+}
+
+/* Mobile Devices (Below 768px) */
+@media (max-width: 768px) {
+    .main-container {
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+    .speed-optimization-container {
+        width: 90%;
+        padding: 20px;
+        margin-bottom: 30px;
+    }
+    .support-p {
+        font-size: 35px;
+    }
+    .design-p {
+        font-size: 16px;
+    }
+    .main-image {
+        max-width: 300px;
+    }
+    .icon {
+        width: 50px;
+    }
+    .icon-left {
+        left: -10px;
+        bottom: 0;
+    }
+    .icon-right {
+        right: -10px;
+        top: 0;
+    }
+}

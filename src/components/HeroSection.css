@@ -1,0 +1,231 @@
+/* === Base Theme Variables === */
+:root {
+  --primary-color: #1B9AAA;
+  --secondary-color: #DDDBCB;
+  --accent-color: #F5F1E3;
+  --background-color: black;
+  --text-color: #d5cb88;
+  --card-bg: #1B1B1B;
+  --floating-bg: #1B1B1B;
+  --floating-border: #DDDBCB;
+  --link-color: #1B9AAA;
+  --hover-color: #168C99;
+  --font-heading: 'Caveat', cursive;
+  --font-body: 'Inter', sans-serif;
+}
+
+/* === Hero Section Styling === */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 10%;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  
+}
+
+.hero-content {
+  max-width: 50%;
+}
+
+h1 {
+  font-size: 42px;
+  font-weight: bold;
+  color: var(--text-color);
+  font-family: var(--font-heading);
+}
+
+h2 {
+  font-size: 36px;
+  color: var(--primary-color);
+  font-family: var(--font-heading);
+}
+
+.highlight {
+  color: var(--accent-color);
+}
+
+p {
+  font-size: 18px;
+  color: var(--secondary-color);
+  font-family: var(--font-body);
+}
+
+.trust-section {
+  margin: 20px 0;
+}
+
+.review {
+  display: flex;
+  align-items: center;
+}
+
+.avatars img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: -10px;
+  border: 2px solid var(--card-bg);
+}
+
+.rating {
+  font-size: 18px;
+  margin-left: 15px;
+}
+
+.trust-text {
+  font-size: 14px;
+  color: var(--secondary-color);
+}
+
+.cta-button {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  padding: 12px 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: var(--font-body);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.cta-button:hover {
+  background-color: var(--hover-color);
+}
+
+.arrow {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.cta-button:hover .arrow {
+  transform: translateX(5px);
+}
+
+/* Hero Image */
+.hero-image {
+  position: relative;
+  max-width: 40%;
+  padding: 20px;
+  background-color: var(--card-bg);
+  border-radius: 20px;
+  animation: zoomIn 1s ease forwards;
+}
+
+.hero-image img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+/* Floating Labels */
+.floating {
+  position: absolute;
+  background: var(--floating-bg);
+  padding: 10px;
+  border-radius: 10px;
+  color: var(--text-color);
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+  border: 1px solid var(--floating-border);
+  font-size: 0.9rem;
+}
+
+.seo {
+  top: 10%;
+  left: -10%;
+  animation: floatUpDown 3s ease-in-out infinite;
+}
+
+.figma-wordpress {
+  bottom: 20%;
+  left: -15%;
+  animation: floatLeftRight 4s ease-in-out infinite;
+}
+
+.analytics {
+  top: 15%;
+  right: -10%;
+  animation: floatUpDown 5s ease-in-out infinite;
+}
+
+/* === Animations === */
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes slideUp {
+  0% { transform: translateY(30px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes zoomIn {
+  0% { transform: scale(0.8); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes floatUpDown {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes floatLeftRight {
+  0%, 100% { transform: translateX(0px); }
+  50% { transform: translateX(10px); }
+}
+
+/* Animation Classes */
+.animate-fade-in {
+  animation: fadeIn 1s ease forwards;
+}
+
+.animate-slide-up {
+  animation: slideUp 1s ease forwards;
+}
+
+.animate-fade-in-delayed {
+  animation: fadeIn 2s ease forwards;
+}
+
+.animate-zoom-in {
+  animation: zoomIn 1s ease forwards;
+}
+
+/* === Responsive (Mobile) === */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    margin-top: 0px !important;
+    padding: 20px 5%;
+  }
+
+  .hero-content {
+    max-width: 100%;
+  }
+
+  .hero-content h1{
+    margin-bottom: 10px;
+    font-size: 34px;
+    
+  }
+
+  .hero-content h2{
+    margin-bottom: 10px;
+    font-size: 30px;
+  }
+
+  .hero-image {
+    max-width: 100%;
+    margin-top: 20px;
+  }
+
+  .floating {
+    display: none;
+  }
+  
+}
