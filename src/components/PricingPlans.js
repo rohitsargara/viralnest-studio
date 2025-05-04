@@ -35,21 +35,21 @@ const plansData = {
   'Website Design & Development': [
     {
       title: 'Landing Page',
-      price: '₹7,999',
+      price: '$ 100',
       description: 'One-page scroll site',
       features: ['✓ Mobile Responsive', '✓ Fast load time', '✓ Contact form'],
       button: 'Start Now',
     },
     {
       title: 'Business Website',
-      price: '₹19,999',
+      price: '$250',
       description: 'Multi-page site for services',
       features: ['✓ 5-7 pages', '✓ Basic SEO', '✓ Admin panel'],
       button: 'Build It',
     },
     {
       title: 'Portfolio Website',
-      price: '₹14,999',
+      price: '$ 200',
       description: 'Personal branding and portfolio site',
       features: ['✓ Clean layout', '✓ Project showcase', '✓ Mobile optimized'],
       button: 'Get Portfolio',

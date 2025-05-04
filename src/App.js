@@ -11,6 +11,12 @@ import PortfolioSection from "./components/PortfolioSection";
 
 import "./App.css";
 
+const scrollToPlans = () => {
+  const section = document.getElementById("services");
+  if (section) {
+    section.scrollIntoView({ behavior: "smooth" });
+  }
+};
 
 
 function App() {
@@ -19,7 +25,7 @@ function App() {
   return (
     <div>
       <Header />
-      <HeroSection />
+      <HeroSection scrollToPlans={scrollToPlans} />
       <AboutSection />
       <PortfolioSection />
       <Business />

@@ -30,12 +30,12 @@
 .title {
   font-size: 48px;
   font-weight: bold;
-  color: var(--text-color) !important;
+  /* color: var(--text-color) ; */
   font-family: var(--font-heading);
 }
 
 .highlight {
-  --highlight-color: #facc15; /* A softer yellow */
+  color: white;
 
 }
 

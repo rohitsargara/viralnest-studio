@@ -30,8 +30,8 @@ const Footer = () => {
         <div className="footer-section">
           <h3 className="footer-title">Contact Us</h3>
           <div className="footer-links">
-            <a href="#about-us">About Us</a>
-            <a href="mailto:youremail@example.com">Viralnest1@gmail.com</a>
+            <a href="#about">About Us</a>
+            <a href="mailto:Viralnest1@gmail.com">Viralnest1@gmail.com</a>
           </div>
           <div className="footer-social-icons">
             <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">

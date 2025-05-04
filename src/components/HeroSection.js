@@ -5,7 +5,7 @@ import heroImage from "../assets/Flux_Dev_A_bright_and_modern_depiction_of_a_foc
 const HeroSection = ({ scrollToPlans }) => {
   return (
     <section className="hero">
-      <div  id="tpo" className="hero-content animate-fade-in">
+      <div id="tpo" className="hero-content animate-fade-in">
         <h1 className="animate-slide-up">All-in-One Website</h1>
         <h2 className="animate-slide-up">
           Care, <span className="highlight">Design</span> & Development
@@ -36,9 +36,7 @@ const HeroSection = ({ scrollToPlans }) => {
 
       <div className="hero-image animate-zoom-in">
         <img src={heroImage} alt="Hero" />
-        <div className="floating seo">92 SEO</div>
-        <div className="floating figma-wordpress">Figma → WP</div>
-        <div className="floating analytics">Woo & Analytics</div>
+        
       </div>
     </section>
   );
