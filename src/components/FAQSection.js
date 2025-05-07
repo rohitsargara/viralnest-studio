@@ -53,7 +53,7 @@ const FAQSection = () => {
 
   return (
     <section id="faq" className="faq-container">
-      <h2 className="faq-title">FAQs</h2>
+      <h2 className="faq-titlefaq-title">FAQs</h2>
       <p className="faq-subtitle">
         Clear, simple answers to help you understand how our plans work and how they can benefit your business.
       </p>

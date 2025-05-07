@@ -72,6 +72,7 @@
   display: flex;
   gap: 20px;
   white-space: nowrap;
+  will-change: transform;
 }
 
 .reverse {

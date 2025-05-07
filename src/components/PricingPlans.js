@@ -6,27 +6,28 @@ const services = [
   { name: 'Social Media Management' },
   { name: 'Website Design & Development' },
   { name: 'Video Editing' },
+  { name: 'Voice Dubbing' }, // ✅ New Service
 ];
 
 const plansData = {
   'Social Media Management': [
     {
       title: 'Starter Plan',
-      price: '₹9,999/mo',
+      price: '$120/mo',
       description: 'Basic content strategy & posting',
       features: ['✓ 8 posts/mo', '✓ 2 reels/mo', '✓ 1 platform', '✓ Basic reporting'],
       button: 'Get Started',
     },
     {
       title: 'Growth Plan',
-      price: '₹19,999/mo',
+      price: '$240/mo',
       description: 'Accelerated growth with better engagement',
       features: ['✓ 15 posts/mo', '✓ 4 reels/mo', '✓ Up to 2 platforms', '✓ Engagement & reports'],
       button: 'Choose Plan',
     },
     {
       title: 'Premium Brand Plan',
-      price: '₹34,999/mo',
+      price: '$420/mo',
       description: 'Complete brand management',
       features: ['✓ Unlimited posts', '✓ 8+ reels/mo', '✓ All platforms', '✓ Influencer collabs', '✓ Advanced analytics'],
       button: 'Go Premium',
@@ -35,7 +36,7 @@ const plansData = {
   'Website Design & Development': [
     {
       title: 'Landing Page',
-      price: '$ 100',
+      price: '$100',
       description: 'One-page scroll site',
       features: ['✓ Mobile Responsive', '✓ Fast load time', '✓ Contact form'],
       button: 'Start Now',
@@ -49,7 +50,7 @@ const plansData = {
     },
     {
       title: 'Portfolio Website',
-      price: '$ 200',
+      price: '$200',
       description: 'Personal branding and portfolio site',
       features: ['✓ Clean layout', '✓ Project showcase', '✓ Mobile optimized'],
       button: 'Get Portfolio',
@@ -58,24 +59,47 @@ const plansData = {
   'Video Editing': [
     {
       title: 'Basic Reels',
-      price: '₹499/reel',
+      price: '$6/reel',
       description: 'Short-form engaging edits',
       features: ['✓ Text overlays', '✓ Transitions', '✓ Royalty-free music'],
       button: 'Edit Reel',
     },
     {
       title: 'YouTube Videos',
-      price: '₹2,499/video',
+      price: '$30/video',
       description: 'Full-length YouTube content edits',
       features: ['✓ Jump cuts', '✓ Effects', '✓ Thumbnails'],
       button: 'Start Editing',
     },
     {
       title: 'Monthly Editing Pack',
-      price: '₹8,999/mo',
+      price: '$110/mo',
       description: 'Bulk content editing for creators',
       features: ['✓ 10+ videos', '✓ Consistent style', '✓ Fast delivery'],
       button: 'Subscribe',
+    },
+  ],
+  'Voice Dubbing': [ // ✅ New Service Added
+    {
+      title: 'Basic Dubbing',
+      price: '$20/video',
+      description: 'English/Hindi dubbing with basic sync',
+      features: ['✓ 1 language', '✓ Basic timing sync', '✓ Clean audio'],
+      button: 'Get Dubbing',
+    },
+    {
+      title: 'Multilingual Dubbing',
+      price: '$40/video',
+      description: 'Dubbing in 2 languages',
+      features: ['✓ 2 languages', '✓ High-quality voiceovers', '✓ Background music'],
+      button: 'Expand Reach',
+    },
+    {
+      title: 'Premium Studio Quality',
+      price: '$75/video',
+      description: 'Professional dubbing with voice actors',
+      features: ['✓ Studio voice artists', '✓ Lip sync', '✓ Background scoring'],
+      button: 'Go Premium',
     },
   ],
 };
