@@ -14,7 +14,7 @@ const features = [
 const BusinessFeatures = () => {
   return (
     <section className="business-features">
-      <h2 className="title">Here's what you will get</h2>
+      <h2 className="titlee">Here's what you will get</h2>
       <p className="subtitle">Get AI-powered social media automation and expert video editing to enhance your brand.</p>
       
       <div className="features-grid">

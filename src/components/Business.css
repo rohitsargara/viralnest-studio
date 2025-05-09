@@ -30,7 +30,7 @@
 .title {
   font-size: 48px;
   font-weight: bold;
-  color: var(--text-color) ;
+  color: #1b9aaa ;
   font-family: var(--font-heading);
 }
 
