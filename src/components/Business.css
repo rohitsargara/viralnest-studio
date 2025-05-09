@@ -30,13 +30,12 @@
 .title {
   font-size: 48px;
   font-weight: bold;
-  color: #1b9aaa ;
+  color: #1b9aaa;
   font-family: var(--font-heading);
 }
 
 .highlight {
   color: white;
-
 }
 
 .description {
@@ -56,27 +55,28 @@
   width: 100%;
   position: relative;
   z-index: 1;
-  margin-top: 20px;
-  overflow: hidden;
-}
-
-.slider-container {
-  width: 100%;
-  overflow: hidden;
+  margin-top: 40px;
   display: flex;
   flex-direction: column;
   gap: 10px;
+  overflow: hidden;
+}
+
+/* NEW SLIDER WRAPPER TRACK */
+.slider-track-wrapper {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
 }
 
 .slider-track {
   display: flex;
-  gap: 20px;
-  white-space: nowrap;
-  will-change: transform;
+  width: max-content;
+  animation: scroll-left 60s linear infinite;
 }
 
-.reverse {
-  flex-direction: row-reverse;
+.reverse .slider-track {
+  animation: scroll-right 60s linear infinite;
 }
 
 /* Slide Items */
@@ -96,6 +96,25 @@
 /* Hover Effect */
 .slide:hover img {
   transform: scale(1.1);
+}
+
+/* Scroll Animations */
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes scroll-right {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
 }
 
 /* 📱 MEDIA QUERIES */
