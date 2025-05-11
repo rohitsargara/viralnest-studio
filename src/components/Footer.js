@@ -23,6 +23,7 @@ const Footer = () => {
             <a href="#services">Social Media Management</a>
             <a href="#services">Website Design & Development</a>
             <a href="#services">Video Editing</a>
+            <a href="#services">Voice Dubbing</a>
           </div>
         </div>
 
@@ -31,7 +32,7 @@ const Footer = () => {
           <h3 className="footer-title">Contact Us</h3>
           <div className="footer-links">
             <a href="#about">About Us</a>
-            <a href="mailto:Viralnest1@gmail.com">Viralnest1@gmail.com</a>
+            <a href="mailto:Viralnest1@gmail.com">viralneststudio1@gmail.com</a>
           </div>
           <div className="footer-social-icons">
             <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
