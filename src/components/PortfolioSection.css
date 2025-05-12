@@ -98,31 +98,48 @@
   align-items: center;
   z-index: 999;
   animation: fadeIn 0.4s ease forwards;
+  padding: 1rem;
 }
-
 .modal-content {
   background: #fff;
   padding: 2rem;
   border-radius: 12px;
-  max-width: 600px;
-  width: 90%;
+  max-width: 500px;
+  width: 100%;
   position: relative;
   animation: zoomIn 0.4s ease forwards;
   text-align: center;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3);
+  overflow-y: auto;
+  max-height: 90vh;
 }
 
-/* Image Carousel */
+/* Modal Close Button */
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  color: #555;
+  cursor: pointer;
+}
+
+/* Carousel */
 .modal-carousel {
   position: relative;
-  text-align: center;
-}
-
-.modal-image {
-  width: 100%;
-  border-radius: 8px;
   margin-bottom: 1rem;
 }
 
+.modal-image {
+  max-width: 100%;
+  height: auto;
+  max-height: 220px;
+  object-fit: cover;
+  border-radius: 8px;
+  /* margin-bottom: 1rem; */
+}
 .carousel-controls {
   display: flex;
   justify-content: space-between;
@@ -140,27 +157,18 @@
   cursor: pointer;
 }
 
+/* Text */
 .modal-title {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   color: #1B9AAA;
-  margin-bottom: 0.8rem;
+  margin-bottom: 0.6rem;
 }
 
 .modal-description {
   font-size: 1rem;
   color: #555;
   margin-bottom: 1rem;
-}
-
-.modal-close {
-  position: absolute;
-  top: 10px;
-  right: 15px;
-  background: none;
-  border: none;
-  font-size: 2rem;
-  color: #333;
-  cursor: pointer;
+  line-height: 1.6;
 }
 
 /* Tools Used Section */
@@ -191,7 +199,7 @@
   font-size: 0.85rem;
 }
 
-/* CTA Button */
+/* CTA */
 .modal-cta {
   display: inline-block;
   margin-top: 20px;
@@ -220,20 +228,27 @@
 }
 
 /* Responsive */
-@media (max-width: 768px) {
-  .portfolio-card {
-    width: 90%;
-  }
-
+@media (max-width: 600px) {
   .modal-content {
-    padding: 1.5rem;
+    padding: 1.2rem;
+    max-height: 85vh;
   }
 
   .modal-title {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
   }
 
   .modal-description {
     font-size: 0.95rem;
+  }
+
+  .modal-close {
+    font-size: 1.6rem;
+    top: 8px;
+    right: 10px;
+  }
+
+  .modal-image {
+    max-height: 200px;
   }
 }
