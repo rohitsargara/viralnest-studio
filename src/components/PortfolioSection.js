@@ -12,35 +12,30 @@ const projects = [
     images: [img1, img2],
     description: "Managed Instagram growth for a salon, achieving 5k followers in just 2 months with strategic content planning and ad boosts.",
     tools: ["Instagram", "Canva", "Meta Ads"],
-    cta: { label: "View Strategy", link: "#" },
   },
   {
     title: "Video Editing Reels",
     images: [img1, img3],
     description: "Produced high-converting Instagram reels for a wellness coach, increasing engagement by 200% in 1 month.",
     tools: ["Premiere Pro", "CapCut", "Motion Graphics"],
-    cta: { label: "Watch Reels", link: "#" },
   },
   {
     title: "Website for Makeup Artist",
     images: [img1, img2],
     description: "Developed a clean, mobile-optimized booking website for a popular MUA based in Pune, boosting appointment conversions.",
     tools: ["React", "Figma", "EmailJS"],
-    cta: { label: "View Website", link: "#" },
   },
   {
     title: "Landing Page for Startup",
     images: [img1, img3],
     description: "Designed a high-converting landing page for a SaaS startup, focusing on modern UI and lead generation.",
     tools: ["Tailwind CSS", "Framer Motion", "SEO Tools"],
-    cta: { label: "See Live", link: "#" },
   },
   {
     title: "YouTube Channel Branding",
     images: [img1, img2, img3],
     description: "Handled branding and full video editing for a motivational YouTube channel, leading to 10k subscribers within 6 months.",
     tools: ["Photoshop", "After Effects", "YouTube Studio"],
-    cta: { label: "Visit Channel", link: "#" },
   },
 ];
 
