@@ -1,10 +1,9 @@
 import React, { useState } from "react";
 import "./PortfolioSection.css";
 import ProjectModal from "./ProjectModal";
-
-import img1 from "../assets/copper-icosahedron-pattern-black.jpg";
+import img1 from "../assets/SocialMedia1.jpeg";
 import img2 from "../assets/desktopslider6.jpg";
-import img3 from "../assets/desktopslider9.jpg";
+import img3 from "../assets/Socialmedia2.jpeg";
 
 const projects = [
   {
@@ -47,7 +46,7 @@ const PortfolioSection = () => {
 
   return (
     <section className="portfolio" id="portfolio">
-      <h2 className="portfolio-heading">Portfolio</h2>
+      <h2 className="portfolio-heading">Our Portfolio</h2>
       <p className="portfolio-subtext">Here are some of our recent projects:</p>
       <div className="portfolio-grid">
         {projects.map((project, index) => (
