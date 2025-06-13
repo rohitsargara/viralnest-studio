@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import "./PortfolioSection.css"; // Reuse for modal styles
 
 const ProjectModal = ({ project, closeModal }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
