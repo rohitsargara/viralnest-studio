@@ -3,57 +3,62 @@ import "./PortfolioSection.css";
 import ProjectModal from "./ProjectModal";
 
 // Import banner images
-import bannerImg1 from "../assets/Social.jpg";        // Social Media Management
-import bannerImg2 from "../assets/Video editing banner.jpg";       // Video Editing Reels
-import bannerImg3 from "../assets/Desktopslider2.jpg";     // Website for MUA
-import bannerImg4 from "../assets/Flux_Dev_A_bright_and_modern_depiction_of_a_focused_young_boy__0.jpg";     // Landing Page
-import bannerImg5 from "../assets/Gallery08-scaled.webp";     // YouTube Branding
+import bannerImg1 from "../assets/Social.jpg";
+import bannerImg2 from "../assets/Vency Website.jpg";
+import bannerImg3 from "../assets/Studio Clay.jpg";
+import bannerImg4 from "../assets/Design Works.jpg";
+import bannerImg5 from "../assets/Design Penta.jpg";
+import bannerImg6 from "../assets/Artisinal Edge.jpg";
+import bannerImg7 from "../assets/Beyond Blueprint.jpg";
+import bannerImg8 from "../assets/Creative Space.jpg";
 
-// Import project detail images
-import img2 from "../assets/SocialMedia1.jpeg";
-import img3 from "../assets/Desktopslider2.jpg";
-import img4 from "../assets/Socialmedia2.jpeg"
 
 const projects = [
   {
-    title: "Social Media Management",
-    banner: bannerImg1,
-    images: [img2, img4, ],
-    description: "Managed Instagram growth for a Entertainment page (@Yoursshivi), achieving 30k followers in just 2 months with strategic content planning and ad boosts.",
-    tools: ["Instagram", "Canva", "Meta Ads, "],
+    title: "Z3 Website & Branding",
+    banner: bannerImg1, 
+    year: 2024,
   },
   {
-    title: "Video Editing Reels",
+    title: "Vinecy Website",
     banner: bannerImg2,
-    images: [img3],
-    description: "Produced high-converting Instagram reels for a wellness coach, increasing engagement by 200% in 1 month.",
-    tools: ["Premiere Pro", "CapCut", "Motion Graphics"],
+    year: 2023,
   },
   {
-    title: "Website for Makeup Artist",
+    title: "Studio Clay",
     banner: bannerImg3,
-    images: [img2],
-    description: "Developed a clean, mobile-optimized booking website for a popular MUA based in Pune, boosting appointment conversions.",
-    tools: ["React", "Figma", "EmailJS"],
+    year: 2020,
   },
   {
-    title: "Landing Page for Startup",
+    title: "Pentaclay Design Works",
     banner: bannerImg4,
-    images: [img3],
-    description: "Designed a high-converting landing page for a SaaS startup, focusing on modern UI and lead generation.",
-    tools: ["Tailwind CSS", "Framer Motion", "SEO Tools"],
+    year: 2022,
   },
   {
-    title: "YouTube Channel Branding",
+    title: "Pentaclay Design Works",
     banner: bannerImg5,
-    images: [img2, img3],
-    description: "Handled branding and full video editing for a motivational YouTube channel, leading to 10k subscribers within 6 months.",
-    tools: ["Photoshop", "After Effects", "YouTube Studio"],
+    year: 2020,
+  },
+  {
+    title: "Artisanal Edge",
+    banner: bannerImg6,
+    year: 2020,
+  },
+  {
+    title: "Beyond Blueprint",
+    banner: bannerImg7,
+    year: 2020,
+  },
+  {
+    title: "Creative Space",
+    banner: bannerImg8,
+    year: 2020,
   },
 ];
 
 const PortfolioSection = () => {
   const [selectedProject, setSelectedProject] = useState(null);
+  const [visibleCount, setVisibleCount] = useState(4);
 
   const openModal = (project) => setSelectedProject(project);
   const closeModal = () => setSelectedProject(null);
@@ -62,16 +67,35 @@ const PortfolioSection = () => {
     <section className="portfolio" id="portfolio">
       <h2 className="portfolio-heading">Our Portfolio</h2>
       <p className="portfolio-subtext">Here are some of our recent projects:</p>
+      
       <div className="portfolio-grid">
-        {projects.map((project, index) => (
-          <div className="portfolio-card" key={index} onClick={() => openModal(project)}>
-            <img src={project.banner} alt={project.title} className="portfolio-image" />
-            <h3>{project.title}</h3>
-            <p>{project.description.substring(0, 60)}...</p>
-            <button className="view-project">View Project</button>
+        {projects.slice(0, visibleCount).map((project, index) => (
+          <div className="portfolio-card-wrapper" key={index}>
+            <div className="portfolio-card" onClick={() => openModal(project)}>
+              <img
+                src={project.banner}
+                alt={project.title}
+                className="portfolio-image"
+              />
+            </div>
+            <div className="project-meta">
+              <span className="project-title">{project.title}</span>
+              <span className="project-year">© {project.year}</span>
+            </div>
           </div>
         ))}
       </div>
+
+      {visibleCount < projects.length && (
+        <div className="load-more-wrapper">
+          <button
+            className="load-more-btn"
+            onClick={() => setVisibleCount(projects.length)}
+          >
+            Load More
+          </button>
+        </div>
+      )}
 
       {selectedProject && (
         <ProjectModal project={selectedProject} closeModal={closeModal} />
