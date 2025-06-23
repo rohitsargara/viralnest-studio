@@ -99,6 +99,24 @@
   width: 100%;
 }
 
+.footer-legal {
+  text-align: center;
+  margin: 1rem 0;
+  font-size: 14px;
+  color: #999;
+}
+
+.footer-legal a {
+  margin: 0 8px;
+  color: #999;
+  text-decoration: none;
+}
+
+.footer-legal a:hover {
+  text-decoration: underline;
+}
+
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .footer-container {

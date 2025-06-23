@@ -461,6 +461,7 @@
   }
 
   .project-grid {
+    display: flex;
     flex-direction: column;
   }
 

@@ -48,6 +48,13 @@ const Footer = () => {
         </div>
       </div>
 
+      {/* Legal Links */}
+      <div className="footer-legal">
+        <a href="/privacy-policy" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
+        <span>•</span>
+        <a href="/terms-and-conditions" target="_blank" rel="noopener noreferrer">Terms & Conditions</a>
+      </div>
+
       {/* Footer Bottom Line */}
       <div className="footer-bottom">
         © 2025 Viralnest Studio. All rights reserved.

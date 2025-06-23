@@ -1,4 +1,8 @@
 import "../src/components/variables.css";
+import "./App.css";
+
+import { BrowserRouter as Router, Routes, Route, } from "react-router-dom";
+
 import Header from "./components/Header";
 import HeroSection from "./components/HeroSection";
 import Business from "./components/Business";
@@ -9,7 +13,10 @@ import PricingPlans from "./components/PricingPlans";
 import AboutSection from "./components/AboutSection"
 import PortfolioSection from "./components/PortfolioSection";
 
-import "./App.css";
+
+import PrivacyPolicy from "./components/PrivacyPolicy";
+
+
 
 const scrollToPlans = () => {
   const section = document.getElementById("services");
@@ -19,11 +26,11 @@ const scrollToPlans = () => {
 };
 
 
-function App() {
+function HomePage() {
 
 
   return (
-    <div>
+    <>
       <Header />
       <HeroSection scrollToPlans={scrollToPlans} />
       <AboutSection />
@@ -33,8 +40,19 @@ function App() {
       <PricingPlans />
       <FAQSection />
       <Footer />
-    </div>
+    </>
   );
+}
+
+function App(){
+  return(
+    <Router>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+      </Routes>
+    </Router>
+  )
 }
 
 export default App;

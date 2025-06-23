@@ -35,7 +35,7 @@ const projects = [
     year: 2022,
   },
   {
-    title: "Pentaclay Design Works",
+    title: "Penta Design",
     banner: bannerImg5,
     year: 2020,
   },
