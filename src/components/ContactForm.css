@@ -64,6 +64,19 @@
     text-align: center;
     padding: 2rem 1rem;
   }
+
+  .checkbox-section {
+  margin: 20px 0;
+  font-size: 0.95rem;
+  color: #ccc;
+}
+
+.link-text {
+  color: #58c4f6;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
   
   @media (max-width: 600px) {
     .form-row {

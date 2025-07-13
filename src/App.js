@@ -12,9 +12,8 @@ import Footer from "./components/Footer"
 import PricingPlans from "./components/PricingPlans";
 import AboutSection from "./components/AboutSection"
 import PortfolioSection from "./components/PortfolioSection";
-
-
 import PrivacyPolicy from "./components/PrivacyPolicy";
+import TermsAndConditions from "../src/components/TermsAndConditions";
 
 
 
@@ -50,6 +49,7 @@ function App(){
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
       </Routes>
     </Router>
   )
