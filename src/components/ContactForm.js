@@ -69,8 +69,23 @@ function ContactForm({ selectedService, selectedPlan }) {
             <button type="submit" className="submit-button">Send Message</button>
 
             <p className="privacy-text">
-                By clicking this button, you agree to the site's <a href="/">privacy policy</a> and consent to the processing of your personal data.
+                By clicking this button, you agree to the site's <a href="/privacy-policy" >privacy policy</a> and consent to the processing of your personal data.
             </p>
+
+            <div className='consent-checkbox'>
+                <input
+                type="checkbox"
+                id="consent"
+                checked={formData.agreed || false}
+                onChange={(e) => setFormData({ ...formData, agreed: e.target.checked})}
+                required
+                />
+
+                <lable htmlFor="constent">
+                    i have read and agree to the {" "}
+                    <a href="/terms-and-conditions" target="_blank" rel="noopener noreferrer">Terms & conditions</a>
+                </lable>
+            </div>
         </form>
     );
 }
